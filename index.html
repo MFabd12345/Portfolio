@@ -154,65 +154,158 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-5" style="background-color: #fff8f0; color: #333;">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row">
-      <!-- Fake News Detection -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Fake News Detection</h5>
-            <p class="card-text">A machine learning project that detects whether a news article is fake or real.</p>
-            <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT.git" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
+<section id="projects" class="py-5" style="background-color: #fff8f0; color: #333;">
+  <h2 class="text-center mb-4">Projects</h2>
+  <div class="row">
+
+    <!-- Fake News Detection -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fake News Detection</h5>
+          <p class="card-text">A machine learning project that detects whether a news article is fake or real.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fakeNewsModal">
+            View Project
+          </button>
         </div>
       </div>
-
-      <!-- Weather App -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Weather App</h5>
-            <p class="card-text">A Java application that fetches real-time weather data using an API.</p>
-            <a href="https://github.com/MFabd12345/Weather-App-using-React.git" target="_blank" class="btn btn-primary">View Project</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="fakeNewsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fake News Detection</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-        </div>
-      </div>
-
-      <!-- Gender & Age Detection -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Gender & Age Detection</h5>
-            <p class="card-text">A computer vision project using OpenCV and deep learning models to detect age and gender from images.</p>
-            <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT.git" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Capstone Project -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Capstone Project</h5>
-            <p class="card-text">Final-year academic project showcasing my technical expertise and teamwork in solving real-world problems.</p>
-            <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project.git" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- IoT Smart Shoe -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">IoT Smart Shoe for Blind</h5>
-            <p class="card-text">An IoT-based assistive device using ESP32 and sensors to detect obstacles, stairs, and holes for visually impaired people.</p>
-            <a href="https://github.com/MFabd12345/Smart-Shoe-Project.git" target="_blank" class="btn btn-primary">View Project</a>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Weather App -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Weather App</h5>
+          <p class="card-text">A Java application that fetches real-time weather data using an API.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#weatherModal">
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="weatherModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Weather App</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/Weather-App-using-React.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/Weather-App-using-React/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gender & Age Detection -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Gender & Age Detection</h5>
+          <p class="card-text">A computer vision project using OpenCV and deep learning models to detect age and gender from images.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#genderModal">
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="genderModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Gender & Age Detection</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capstone Project -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Capstone Project</h5>
+          <p class="card-text">Final-year academic project showcasing my technical expertise and teamwork in solving real-world problems.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#capstoneModal">
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="capstoneModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Capstone Project</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IoT Smart Shoe -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">IoT Smart Shoe for Blind</h5>
+          <p class="card-text">An IoT-based assistive device using ESP32 and sensors to detect obstacles, stairs, and holes for visually impaired people.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shoeModal">
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="shoeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">IoT Smart Shoe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/Smart-Shoe-Project.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/Smart-Shoe-Project/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="py-5" style="background-color: #f5f7fa; color: #333;">
