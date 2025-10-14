@@ -340,21 +340,31 @@ document.getElementById("contactForm").addEventListener("submit", async function
   };
 
   try {
-    let response = await fetch("http://localhost:5000/send", {
+    const response = await fetch("http://localhost:5000/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
 
-    let result = await response.json();
+    // Check if backend is unreachable or not responding
+    if (!response.ok) {
+      throw new Error("SERVER_ERROR");
+    }
+
+    const result = await response.json();
     if (result.success) {
       alert("✅ Message Sent Successfully!");
       this.reset();
     } else {
-      alert("❌ Failed: " + result.error);
+      alert("❌ Failed: " + (result.error || "Unknown error"));
     }
   } catch (error) {
-    alert("⚠️ Error: " + error.message);
+    // Handle network errors or when backend is offline
+    if (error.message.includes("Failed to fetch") || error.message.includes("SERVER_ERROR")) {
+      alert("🚫 The website owner is currently offline.\nPlease try again later.");
+    } else {
+      alert("⚠️ Unexpected error occurred: " + error.message);
+    }
   }
 });
 </script>
