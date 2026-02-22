@@ -95,7 +95,7 @@
   <header class="hero">
     <div>
       <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
-      <p class="lead"><span class="unique-name">I'm Abdulla</span> — B.Tech IT Graduate | Aspiring Data Analyst</p>
+      <p class="lead"><span class="unique-name">I'm Abdulla</span> — B.Tech IT Graduate | Aspiring Software Engineer</p>
       <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
 
       <!-- Resume Modal Button -->
@@ -135,23 +135,31 @@
   <!-- About Section -->
   <section id="about" class="py-5" style="background-color: #fdfdfd; color: #333;">
     <h2 class="text-center mb-4">About Me</h2>
-    <p class="text-center">I am a passionate B.Tech IT graduate specializing in Data Science and Analytics. I enjoy solving problems and building real-world projects that make an impact.</p>
+    <p class="text-center">
+  I am a B.Tech IT graduate who enjoys building software, solving problems, 
+  and learning new technologies to create meaningful and practical applications.
+</p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-5" style="background-color: #f0f9ff; color: #333;">
+<section id="skills" class="py-5" style="background-color: #f0f9ff; color: #333;">
+  <div class="container">
     <h2 class="text-center mb-4">Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-3"><p><strong>Python</strong></p></div>
-      <div class="col-md-3"><p><strong>Java</strong></p></div>
-      <div class="col-md-3"><p><strong>SQL</strong></p></div>
-      <div class="col-md-3"><p><strong>JavaScript</strong></p></div>
-      <div class="col-md-3"><p><strong>HTML & CSS</strong></p></div>
-      <div class="col-md-3"><p><strong>AI/ML</strong></p></div>
-      <div class="col-md-3"><p><strong>React</strong></p></div>
-      <div class="col-md-3"><p><strong>Data Analysis</strong></p></div>
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3"><strong>Python</strong></div>
+      <div class="col-6 col-md-3"><strong>Java</strong></div>
+      <div class="col-6 col-md-3"><strong>SQL</strong></div>
+      <div class="col-6 col-md-3"><strong>JavaScript</strong></div>
+
+      <div class="col-6 col-md-3"><strong>HTML & CSS</strong></div>
+      <div class="col-6 col-md-3"><strong>React</strong></div>
+      <div class="col-6 col-md-3"><strong>Data Analysis</strong></div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Projects Section -->
 <section id="projects" class="py-5" style="background-color: #fff8f0; color: #333;">
@@ -298,6 +306,45 @@
             <a href="https://github.com/MFabd12345/Smart-Shoe-Project.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
             <br>
             <a href="https://github.com/MFabd12345/Smart-Shoe-Project/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          <!-- Employee & Billing Management System -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Employee & Billing Management System</h5>
+          <p class="card-text">
+            A Java-based application using JDBC and MySQL with secure admin login,
+            employee CRUD operations, and automated billing using DAO architecture.
+          </p>
+          <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#billingModal">
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Billing Modal -->
+    <div class="modal fade" id="billingModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Employee & Billing Management System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            <a href="https://github.com/MFabd12345/Employee-Billing-Management-System.git"
+               target="_blank"
+               class="btn btn-outline-primary mb-2 w-50">View</a>
+            <br>
+            <a href="https://github.com/MFabd12345/Employee-Billing-Management-System/archive/refs/heads/main.zip"
+               download
+               class="btn btn-outline-primary w-50">Download</a>
           </div>
         </div>
       </div>
