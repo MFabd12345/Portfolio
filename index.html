@@ -6,6 +6,7 @@
   <meta name="description" content="Portfolio of Abdulla - B.Tech IT Graduate | Aspiring Data Analyst">
   <title>Abdulla | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -33,8 +34,13 @@
     }
 
     /* Navbar */
-    .navbar { transition: background-color 0.3s; }
-    .navbar.scrolled { background-color: #333 !important; }
+    .navbar {
+      transition: background-color 0.3s;
+    }
+
+    .navbar.scrolled {
+      background-color: #333 !important;
+    }
 
     /* Unique Name Styling */
     .unique-name {
@@ -47,11 +53,21 @@
     }
 
     /* Projects */
-    .project-card { transition: transform 0.3s; }
-    .project-card:hover { transform: scale(1.05); }
+    .project-card {
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
 
     /* Footer */
-    footer { background-color: #222; color: white; padding: 20px; text-align: center; }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
     /* Scroll to top button */
     #scrollTopBtn {
@@ -69,423 +85,1081 @@
       border-radius: 50%;
       font-size: 18px;
     }
-    #scrollTopBtn:hover { background-color: #555; }
+
+    #scrollTopBtn:hover {
+      background-color: #555;
+    }
   </style>
 </head>
+
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand unique-name" href="#">Abdulla</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <a class="navbar-brand unique-name" href="#">
+        Abdulla
+      </a>
+
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav">
+
         <span class="navbar-toggler-icon"></span>
+
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
+
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
         </ul>
+
       </div>
     </div>
   </nav>
 
+
   <!-- Hero -->
   <header class="hero">
-    <div>
-      <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
-      <p class="lead"><span class="unique-name">I'm Abdulla</span> — B.Tech IT Graduate | Aspiring Software Engineer</p>
-      <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
 
-      <!-- Resume Modal Button -->
-      <button type="button" class="btn btn-outline-light btn-lg mt-3 ms-2" data-bs-toggle="modal" data-bs-target="#resumeModal">
+    <div>
+
+      <h1 class="display-4 fw-bold">
+        Welcome to My Portfolio
+      </h1>
+
+      <p class="lead">
+
+        <span class="unique-name">
+          I'm Abdulla
+        </span>
+
+        — B.Tech IT Graduate | Aspiring Software Engineer
+
+      </p>
+
+      <a href="#projects"
+         class="btn btn-primary btn-lg mt-3">
+
+        View My Work
+
+      </a>
+
+
+      <!-- Resume Button -->
+      <button type="button"
+              class="btn btn-outline-light btn-lg mt-3 ms-2"
+              data-bs-toggle="modal"
+              data-bs-target="#resumeModal">
+
         Resume
+
       </button>
+
     </div>
+
   </header>
 
+
   <!-- Resume Modal -->
-  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+  <div class="modal fade"
+       id="resumeModal"
+       tabindex="-1"
+       aria-labelledby="resumeModalLabel"
+       aria-hidden="true">
+
     <div class="modal-dialog modal-dialog-centered">
+
       <div class="modal-content">
+
         <div class="modal-header">
-          <h5 class="modal-title" id="resumeModalLabel">Resume Options</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <h5 class="modal-title"
+              id="resumeModalLabel">
+
+            Resume Options
+
+          </h5>
+
+          <button type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close">
+
+          </button>
+
         </div>
+
+
         <div class="modal-body text-center">
+
+
           <!-- Download Button -->
-          <a href="https://raw.githubusercontent.com/MFabd12345/Portfolio/main/ABDULLA__RESUME.pdf?raw=1"
-             download="ABDULLA__RESUME.pdf" 
+          <a href="https://raw.githubusercontent.com/MFabd12345/Portfolio/main/Abdulla_Resume.pdf"
+             download="Abdulla_Resume.pdf"
              class="btn btn-outline-primary mb-2 w-50">
+
             Download
+
           </a>
+
           <br>
+
+
           <!-- View Button -->
-          <a href="https://drive.google.com/file/d/11JSyPlp39MzmRpu9rqYrc4m48tptTYnA/view?usp=sharing" 
-             target="_blank" 
+          <a href="https://mfabd12345.github.io/Portfolio/Abdulla_Resume.pdf"
+             target="_blank"
              class="btn btn-outline-primary w-50">
+
             View
+
           </a>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 
   <!-- About Section -->
-  <section id="about" class="py-5" style="background-color: #fdfdfd; color: #333;">
-    <h2 class="text-center mb-4">About Me</h2>
+  <section id="about"
+           class="py-5"
+           style="background-color: #fdfdfd; color: #333;">
+
+    <h2 class="text-center mb-4">
+      About Me
+    </h2>
+
     <p class="text-center">
-  I am a B.Tech IT graduate who enjoys building software, solving problems, 
-  and learning new technologies to create meaningful and practical applications.
-</p>
+
+      I am a B.Tech IT graduate who enjoys building software,
+      solving problems, and learning new technologies to create
+      meaningful and practical applications.
+
+    </p>
+
   </section>
 
+
   <!-- Skills Section -->
-<section id="skills" class="py-5" style="background-color: #f0f9ff; color: #333;">
-  <div class="container">
-    <h2 class="text-center mb-4">Skills</h2>
-    <div class="row text-center g-4">
+  <section id="skills"
+           class="py-5"
+           style="background-color: #f0f9ff; color: #333;">
 
-      <div class="col-6 col-md-3"><strong>Python</strong></div>
-      <div class="col-6 col-md-3"><strong>Java</strong></div>
-      <div class="col-6 col-md-3"><strong>SQL</strong></div>
-      <div class="col-6 col-md-3"><strong>JavaScript</strong></div>
+    <div class="container">
 
-      <div class="col-6 col-md-3"><strong>HTML & CSS</strong></div>
-      <div class="col-6 col-md-3"><strong>React</strong></div>
-      <div class="col-6 col-md-3"><strong>Data Analysis</strong></div>
+      <h2 class="text-center mb-4">
+        Skills
+      </h2>
+
+      <div class="row text-center g-4">
+
+        <div class="col-6 col-md-3">
+          <strong>Python</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>Java</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>SQL</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>JavaScript</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>HTML & CSS</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>React</strong>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <strong>Data Analysis</strong>
+        </div>
+
+      </div>
 
     </div>
-  </div>
-</section>
+
+  </section>
 
 
   <!-- Projects Section -->
-<section id="projects" class="py-5" style="background-color: #fff8f0; color: #333;">
-  <h2 class="text-center mb-4">Projects</h2>
-  <div class="row">
+  <section id="projects"
+           class="py-5"
+           style="background-color: #fff8f0; color: #333;">
 
-    <!-- Fake News Detection -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Fake News Detection</h5>
-          <p class="card-text">A machine learning project that detects whether a news article is fake or real.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fakeNewsModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="fakeNewsModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Fake News Detection</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    <h2 class="text-center mb-4">
+      Projects
+    </h2>
+
+    <div class="row">
+
+
+      <!-- Fake News Detection -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              Fake News Detection
+            </h5>
+
+            <p class="card-text">
+
+              A machine learning project that detects whether
+              a news article is fake or real.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fakeNewsModal">
+
+              View Project
+
+            </button>
+
           </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
-          </div>
+
         </div>
+
       </div>
+
+
+      <!-- Fake News Modal -->
+      <div class="modal fade"
+           id="fakeNewsModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                Fake News Detection
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/FAKE_NEWS_PROJECT/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Weather App -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              Weather App
+            </h5>
+
+            <p class="card-text">
+
+              A Java application that fetches real-time
+              weather data using an API.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#weatherModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Weather Modal -->
+      <div class="modal fade"
+           id="weatherModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                Weather App
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/Weather-App-using-React.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/Weather-App-using-React/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Gender & Age Detection -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              Gender & Age Detection
+            </h5>
+
+            <p class="card-text">
+
+              A computer vision project using OpenCV and
+              deep learning models to detect age and gender
+              from images.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#genderModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Gender Modal -->
+      <div class="modal fade"
+           id="genderModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                Gender & Age Detection
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Capstone Project -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              Capstone Project
+            </h5>
+
+            <p class="card-text">
+
+              Final-year academic project showcasing my
+              technical expertise and teamwork in solving
+              real-world problems.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#capstoneModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Capstone Modal -->
+      <div class="modal fade"
+           id="capstoneModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                Capstone Project
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IoT Smart Shoe -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              IoT Smart Shoe for Blind
+            </h5>
+
+            <p class="card-text">
+
+              An IoT-based assistive device using ESP32 and
+              sensors to detect obstacles, stairs, and holes
+              for visually impaired people.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shoeModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Shoe Modal -->
+      <div class="modal fade"
+           id="shoeModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                IoT Smart Shoe
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/Smart-Shoe-Project.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/Smart-Shoe-Project/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Employee & Billing Management System -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              Employee & Billing Management System
+            </h5>
+
+            <p class="card-text">
+
+              A Java-based application using JDBC and MySQL
+              with secure admin login, employee CRUD operations,
+              and automated billing using DAO architecture.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#billingModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Billing Modal -->
+      <div class="modal fade"
+           id="billingModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                Employee & Billing Management System
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/Employee-Billing-Management-System.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/Employee-Billing-Management-System/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IT Service & Asset Management -->
+      <div class="col-md-4">
+
+        <div class="card project-card">
+
+          <div class="card-body text-center">
+
+            <h5 class="card-title">
+              IT Service & Asset Management
+            </h5>
+
+            <p class="card-text">
+
+              A full-stack IT service and asset management
+              system using React, ASP.NET Core, MySQL, and AWS.
+
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#itsmModal">
+
+              View Project
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ITSM Modal -->
+      <div class="modal fade"
+           id="itsmModal"
+           tabindex="-1"
+           aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">
+                IT Service & Asset Management
+              </h5>
+
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+
+              </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+              <a href="https://github.com/MFabd12345/IT-Service-Asset-Management.git"
+                 target="_blank"
+                 class="btn btn-outline-primary mb-2 w-50">
+
+                View
+
+              </a>
+
+              <br>
+
+              <a href="https://github.com/MFabd12345/IT-Service-Asset-Management/archive/refs/heads/main.zip"
+                 download
+                 class="btn btn-outline-primary w-50">
+
+                Download
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- Weather App -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Weather App</h5>
-          <p class="card-text">A Java application that fetches real-time weather data using an API.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#weatherModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="weatherModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Weather App</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/Weather-App-using-React.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/Weather-App-using-React/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Gender & Age Detection -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Gender & Age Detection</h5>
-          <p class="card-text">A computer vision project using OpenCV and deep learning models to detect age and gender from images.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#genderModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="genderModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Gender & Age Detection</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/GENDER_AGE_DETECTION_PROJECT/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Capstone Project -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Capstone Project</h5>
-          <p class="card-text">Final-year academic project showcasing my technical expertise and teamwork in solving real-world problems.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#capstoneModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="capstoneModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Capstone Project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/Capstone_DataAnalytics_Project/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- IoT Smart Shoe -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">IoT Smart Shoe for Blind</h5>
-          <p class="card-text">An IoT-based assistive device using ESP32 and sensors to detect obstacles, stairs, and holes for visually impaired people.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shoeModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="shoeModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">IoT Smart Shoe</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/Smart-Shoe-Project.git" target="_blank" class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/Smart-Shoe-Project/archive/refs/heads/main.zip" download class="btn btn-outline-primary w-50">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-          <!-- Employee & Billing Management System -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Employee & Billing Management System</h5>
-          <p class="card-text">
-            A Java-based application using JDBC and MySQL with secure admin login,
-            employee CRUD operations, and automated billing using DAO architecture.
-          </p>
-          <button type="button" class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#billingModal">
-            View Project
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Billing Modal -->
-    <div class="modal fade" id="billingModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Employee & Billing Management System</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center">
-            <a href="https://github.com/MFabd12345/Employee-Billing-Management-System.git"
-               target="_blank"
-               class="btn btn-outline-primary mb-2 w-50">View</a>
-            <br>
-            <a href="https://github.com/MFabd12345/Employee-Billing-Management-System/archive/refs/heads/main.zip"
-               download
-               class="btn btn-outline-primary w-50">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!-- IT Service & Asset Management -->
-<div class="col-md-4">
-  <div class="card project-card">
-    <div class="card-body text-center">
-      <h5 class="card-title">IT Service & Asset Management</h5>
-      <p class="card-text">
-        A full-stack IT service and asset management system using React,
-        ASP.NET Core, MySQL, and AWS.
-      </p>
-      <button type="button" class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#itsmModal">
-        View Project
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- IT Service & Asset Management Modal -->
-<div class="modal fade" id="itsmModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">IT Service & Asset Management</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body text-center">
-        <a href="https://raw.githubusercontent.com/MFabd12345/Portfolio/main/ABDULLA__RESUME.pdf"
-   target="_blank"
-   class="btn btn-outline-primary w-50">
-  View
-</a>
-        <br>
-        <a href="https://github.com/MFabd12345/IT-Service-Asset-Management/archive/refs/heads/main.zip"
-           download
-           class="btn btn-outline-primary w-50">Download</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
-</section>
+  </section>
 
 
   <!-- Contact Section -->
-<section id="contact" class="py-5" style="background-color: #f5f7fa; color: #333;">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact Me</h2>
-    <form id="contactForm" class="mx-auto" style="max-width: 600px;">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Send</button>
-    </form>
-  </div>
-</section>
+  <section id="contact"
+           class="py-5"
+           style="background-color: #f5f7fa; color: #333;">
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", async function(event) {
-  event.preventDefault();
+    <div class="container">
 
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+      <h2 class="text-center mb-4">
+        Contact Me
+      </h2>
 
-  try {
-    const response = await fetch("http://localhost:5000/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
+      <form id="contactForm"
+            class="mx-auto"
+            style="max-width: 600px;">
+
+        <div class="mb-3">
+
+          <label for="name"
+                 class="form-label">
+
+            Name
+
+          </label>
+
+          <input type="text"
+                 class="form-control"
+                 id="name"
+                 placeholder="Enter your name"
+                 required>
+
+        </div>
+
+
+        <div class="mb-3">
+
+          <label for="email"
+                 class="form-label">
+
+            Email
+
+          </label>
+
+          <input type="email"
+                 class="form-control"
+                 id="email"
+                 placeholder="Enter your email"
+                 required>
+
+        </div>
+
+
+        <div class="mb-3">
+
+          <label for="message"
+                 class="form-label">
+
+            Message
+
+          </label>
+
+          <textarea class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required>
+          </textarea>
+
+        </div>
+
+
+        <button type="submit"
+                class="btn btn-primary w-100">
+
+          Send
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <script>
+
+    document.getElementById("contactForm").addEventListener("submit", async function(event) {
+
+      event.preventDefault();
+
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+
+      try {
+
+        const response = await fetch("http://localhost:5000/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error("SERVER_ERROR");
+        }
+
+        const result = await response.json();
+
+        if (result.success) {
+
+          alert("✅ Message Sent Successfully!");
+          this.reset();
+
+        } else {
+
+          alert("❌ Failed: " + (result.error || "Unknown error"));
+
+        }
+
+      } catch (error) {
+
+        if (error.message.includes("Failed to fetch") ||
+            error.message.includes("SERVER_ERROR")) {
+
+          alert(
+            "🚫 The website owner is currently offline.\nPlease try again later."
+          );
+
+        } else {
+
+          alert(
+            "⚠️ Unexpected error occurred: " + error.message
+          );
+
+        }
+
+      }
+
     });
 
-    // Check if backend is unreachable or not responding
-    if (!response.ok) {
-      throw new Error("SERVER_ERROR");
-    }
-
-    const result = await response.json();
-    if (result.success) {
-      alert("✅ Message Sent Successfully!");
-      this.reset();
-    } else {
-      alert("❌ Failed: " + (result.error || "Unknown error"));
-    }
-  } catch (error) {
-    // Handle network errors or when backend is offline
-    if (error.message.includes("Failed to fetch") || error.message.includes("SERVER_ERROR")) {
-      alert("🚫 The website owner is currently offline.\nPlease try again later.");
-    } else {
-      alert("⚠️ Unexpected error occurred: " + error.message);
-    }
-  }
-});
-</script>
-
+  </script>
 
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 <span class="unique-name">Abdulla</span> | All Rights Reserved</p>
+
+    <p>
+
+      © 2025
+      <span class="unique-name">
+        Abdulla
+      </span>
+      | All Rights Reserved
+
+    </p>
+
   </footer>
 
+
   <!-- Scroll to top -->
-  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+  <button onclick="topFunction()"
+          id="scrollTopBtn"
+          title="Go to top">
+
+    ↑
+
+  </button>
+
 
   <script>
-    
 
     // Navbar color on scroll
     window.addEventListener('scroll', function() {
+
       const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) navbar.classList.add('scrolled');
-      else navbar.classList.remove('scrolled');
+
+      if (window.scrollY > 50)
+
+        navbar.classList.add('scrolled');
+
+      else
+
+        navbar.classList.remove('scrolled');
+
     });
 
+
     // Scroll to top button
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    const scrollTopBtn =
+      document.getElementById("scrollTopBtn");
+
     window.onscroll = function() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) scrollTopBtn.style.display = "block";
-      else scrollTopBtn.style.display = "none";
+
+      if (document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200)
+
+        scrollTopBtn.style.display = "block";
+
+      else
+
+        scrollTopBtn.style.display = "none";
+
     };
-    function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
+
+
+    function topFunction() {
+
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+
+    }
+
   </script>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
