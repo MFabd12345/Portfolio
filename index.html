@@ -1026,61 +1026,24 @@
 
   <script>
 
-    document.getElementById("contactForm").addEventListener("submit", async function(event) {
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
 
       event.preventDefault();
 
-      const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-      };
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
 
-      try {
+      const subject = encodeURIComponent("Portfolio Contact - " + name);
 
-        const response = await fetch("http://localhost:5000/send", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(formData),
-        });
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message
+      );
 
-        if (!response.ok) {
-          throw new Error("SERVER_ERROR");
-        }
-
-        const result = await response.json();
-
-        if (result.success) {
-
-          alert("✅ Message Sent Successfully!");
-          this.reset();
-
-        } else {
-
-          alert("❌ Failed: " + (result.error || "Unknown error"));
-
-        }
-
-      } catch (error) {
-
-        if (error.message.includes("Failed to fetch") ||
-            error.message.includes("SERVER_ERROR")) {
-
-          alert(
-            "🚫 The website owner is currently offline.\nPlease try again later."
-          );
-
-        } else {
-
-          alert(
-            "⚠️ Unexpected error occurred: " + error.message
-          );
-
-        }
-
-      }
+      window.location.href =
+        "mailto:abdullamf02@gmail.com?subject=" + subject + "&body=" + body;
 
     });
 
